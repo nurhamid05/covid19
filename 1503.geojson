@@ -3599,9 +3599,9 @@
         ]
       },
       "properties": {
+        "LOKASI": "KABUPATEN SAROLANGUN",
         "ODP": 103,
-        "PDP": 4,
-        "LOKASI": "KABUPATEN SAROLANGUN"
+        "PDP": 4
       }
     }
   ]
