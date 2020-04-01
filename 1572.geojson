@@ -155,9 +155,9 @@
         ]
       },
       "properties": {
-      "name": "KOTA SUNGAI PENUH",
-      "latitude": -2.10896,
-      "longitude": 101.32175
+        "LOKASI": "KOTA SUNGAI PENUH",
+        "ODP": 6,
+        "PDP": 0
       }
     }
   ]
