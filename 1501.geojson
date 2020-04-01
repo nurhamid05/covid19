@@ -1887,9 +1887,9 @@
 ]
 },
 "properties": {
-"name": "KABUPATEN KERINCI",
-"latitude": -2.03333,
-"longitude": 101.53333
+"LOKASI": "KABUPATEN KERINCI",
+"OPD": 52,
+"PDP": 2
 }
 }
 ]
