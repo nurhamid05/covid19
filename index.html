@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Area Provinsi Jambi</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <script type="text/javascript" src="leaflet.ajax.js"></script>
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		#map {
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+
+	
+</head>
+<body>
+
+<div id='map'></div>
+
+<script type="text/javascript">
+
+	var mymap = L.map('map').setView([-1.61157, 102.7797], 8);
+	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Copyleft &copy; Diskominfo Provinsi Jambi',
+    maxZoom: 15,
+    minZoom:8,
+    id: 'mapbox/streets-v8',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1Ijoic25vd3JleCIsImEiOiJjazhmbTd4cG8wNXN0M2ZzMDFpZGNoaWpmIn0.GgO0rwaNrkc-eqVt6DeM3g'
+}).addTo(mymap);
+	var cMuaroJambi = {
+		"fillOpacity":0.5,
+	    "color": "#519e8a",
+	    "weight": 2,
+	    "opacity": 1
+	};
+	var cJambi = {
+		"fillOpacity":0.5,
+	    "color": "#dbe757",
+	    "weight": 2,
+	    "opacity": 1
+	};
+	var cSarolangun = {
+		"fillOpacity":0.5,
+	    "color": "#cd81e3",
+	    "weight": 2,
+	    "opacity": 1
+	};
+	var cBatanghari = {
+		"fillOpacity":0.5,
+	    "color": "#6da24a",
+	    "weight": 2,
+	    "opacity": 1
+	};
+	var cTjt = {
+		"fillOpacity":0.5,
+	    "color": "#ae7a55",
+	    "weight": 2,
+	    "opacity": 1
+	};
+	var cTjb = {
+		"fillOpacity":0.5,
+	    "color": "#a3af65",
+	    "weight": 2,
+	    "opacity": 1
+	};
+	var cMerangin = {
+		"fillOpacity":0.5,
+	    "color": "#73e535",
+	    "weight": 2,
+	    "opacity": 1
+	};
+	var cKerinci = {
+		"fillOpacity":0.5,
+	    "color": "#bddd7c",
+	    "weight": 2,
+	    "opacity": 1
+	};
+	var cSungaipenuh = {
+		"fillOpacity":0.5,
+	    "color": "#dd8385",
+	    "weight": 2,
+	    "opacity": 1
+	};
+	var cBungo = {
+		"fillOpacity":0.5,
+	    "color": "#e387d0",
+	    "weight": 2,
+	    "opacity": 1
+	};
+	var cTebo = {
+		"fillOpacity":0.5,
+	    "color": "#e8b041",
+	    "weight": 2,
+	    "opacity": 1
+	};
+	
+
+	function popUp(f,l){
+	    var out = [];
+	    if (f.properties){
+	        for(key in f.properties){
+	        	
+	            out.push(key+": "+f.properties[key]);
+	        }
+	        l.on('mouseover', function(e) {
+	        	var layer = e.target;
+			    layer.setStyle({
+			        weight: 5,
+			        fillOpacity: 1
+			    });
+			    var popup = L.popup()
+				    .setLatLng(e.latlng) //(assuming e.latlng returns the coordinates of the event)
+				    .setContent(out.join("</br>"))
+				    .openOn(mymap);
+			    
+	        });
+
+	     	l.on({
+		        mouseout:resetHighlight,
+		        click: zoomToFeature
+		    });   
+	    }
+	}
+	function zoomToFeature(e) {
+		mymap.fitBounds(e.target.getBounds());
+	    
+	}
+	function highlightFeature(e) {
+	    var layer = e.target;
+
+	    layer.setStyle({
+	        weight: 5,
+	        fillOpacity: 1
+	    });
+
+	    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+	        layer.bringToFront();
+	    }
+	}
+	function resetHighlight(e) {
+	    var layer = e.target;
+
+	    layer.setStyle({
+	        weight: 2,
+	        fillOpacity: 0.5
+	    });
+
+	    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+	        layer.bringToFront();
+	    }
+	}
+	function show(e){
+		var L = e.target;
+		var f = e.target.feature;
+		var out = [];
+		for(key in f.properties){
+        	out.push(key+": "+f.properties[key]);
+        }
+        //e.target.append(out.join("<br />"));
+		console.log(e);
+	}
+	var kerinci = new L.GeoJSON.AJAX(["https://raw.githubusercontent.com/nurhamid05/covid19/master/1501.geojson"],{onEachFeature:popUp,style:cKerinci}).addTo(mymap);
+	var merangin = new L.GeoJSON.AJAX(["https://raw.githubusercontent.com/nurhamid05/covid19/master/merangin.geojson"],{onEachFeature:popUp,style:cMerangin}).addTo(mymap);
+	var sarolangun = new L.GeoJSON.AJAX(["https://raw.githubusercontent.com/nurhamid05/covid19/master/1503.geojson"],{onEachFeature:popUp,style:cSarolangun}).addTo(mymap);
+	var batangHari = new L.GeoJSON.AJAX(["https://raw.githubusercontent.com/nurhamid05/covid19/master/1504.geojson"],{onEachFeature:popUp,style:cBatanghari}).addTo(mymap);
+	var muaroJambi = new L.GeoJSON.AJAX(["https://raw.githubusercontent.com/nurhamid05/covid19/master/1505.geojson"],{onEachFeature:popUp,style:cMuaroJambi}).addTo(mymap);
+	var tjt = new L.GeoJSON.AJAX(["https://raw.githubusercontent.com/nurhamid05/covid19/master/1506.geojson"],{onEachFeature:popUp,style:cTjt}).addTo(mymap);
+	var tjb = new L.GeoJSON.AJAX(["https://raw.githubusercontent.com/nurhamid05/covid19/master/1507.geojson"],{onEachFeature:popUp,style:cTjb}).addTo(mymap);
+	var tebo = new L.GeoJSON.AJAX(["https://raw.githubusercontent.com/nurhamid05/covid19/master/1508.geojson"],{onEachFeature:popUp,style:cTebo}).addTo(mymap);
+	var bungo = new L.GeoJSON.AJAX(["https://raw.githubusercontent.com/nurhamid05/covid19/master/1509.geojson"],{onEachFeature:popUp,style:cBungo}).addTo(mymap);
+	var jambi = new L.GeoJSON.AJAX(["https://raw.githubusercontent.com/nurhamid05/covid19/master/1571.geojson"],{onEachFeature:popUp,style:cJambi}).addTo(mymap);
+	var sungaiPenuh = new L.GeoJSON.AJAX(["https://raw.githubusercontent.com/nurhamid05/covid19/master/1572.geojson"],{onEachFeature:popUp,style:cSungaipenuh}).addTo(mymap);
+</script>
+
+
+
+</body>
+</html>
