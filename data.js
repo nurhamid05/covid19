@@ -181,7 +181,7 @@ var sekernan = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Sekernan","ODP": "19","PDP": "-"},
+      "properties": {"Kecamatan":"Sekernan","ODP": "7","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -197,7 +197,7 @@ var kumpeh = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Kumpeh","ODP": "33","PDP": "-"},
+      "properties": {"Kecamatan":"Kumpeh","ODP": "8","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -213,7 +213,7 @@ var mjmarosebo = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Maro Sebo","ODP": "5","PDP": "-"},
+      "properties": {"Kecamatan":"Maro Sebo","ODP": "3","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -229,7 +229,7 @@ var kumpehulu = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Kumpeh Ulu","ODP": "11","PDP": "-"},
+      "properties": {"Kecamatan":"Kumpeh Ulu","ODP": "7","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -245,7 +245,7 @@ var jaluko = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Jambi Luar Kota","ODP": "30","PDP": "-"},
+      "properties": {"Kecamatan":"Jambi Luar Kota","ODP": "22","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -261,7 +261,7 @@ var mestong = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Mestong","ODP": "5","PDP": "-"},
+      "properties": {"Kecamatan":"Mestong","ODP": "2","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -277,7 +277,7 @@ var sungaigelam = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Sungai Gelam","ODP": "17","PDP": "-"},
+      "properties": {"Kecamatan":"Sungai Gelam","ODP": "13","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -293,7 +293,7 @@ var sungaibahar = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Sungai Bahar","ODP": "4","PDP": "-"},
+      "properties": {"Kecamatan":"Sungai Bahar","ODP": "2","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -309,7 +309,7 @@ var baharselatan = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Bahar Selatan","ODP": "6","PDP": "-"},
+      "properties": {"Kecamatan":"Bahar Selatan","ODP": "18","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -325,7 +325,7 @@ var baharutara = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Bahar Utara","ODP": "6","PDP": "-"},
+      "properties": {"Kecamatan":"Bahar Utara","ODP": "2","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -341,7 +341,7 @@ var tamanrajo = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Taman Rajo","ODP": "9","PDP": "-"},
+      "properties": {"Kecamatan":"Taman Rajo","ODP": "8","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -744,7 +744,7 @@ var pasarbungo = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Pasar Bungo","ODP": "-","PDP": "-"},
+      "properties": {"Kecamatan":"Pasar Bungo","ODP": "14","PDP": "1"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -760,7 +760,7 @@ var jujuhan = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Jujuhan","ODP": "-","PDP": "-"},
+      "properties": {"Kecamatan":"Jujuhan","ODP": "4","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -776,7 +776,7 @@ var tanahtumbuh = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Tanah Tumbuh","ODP": "-","PDP": "-"},
+      "properties": {"Kecamatan":"Tanah Tumbuh","ODP": "4","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -792,7 +792,7 @@ var tanahsepenggal = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Tanah Sepenggal","ODP": "-","PDP": "-"},
+      "properties": {"Kecamatan":"Tanah Sepenggal","ODP": "3","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -808,7 +808,7 @@ var rantaupandan = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Rantau Pandan","ODP": "-","PDP": "-"},
+      "properties": {"Kecamatan":"Rantau Pandan","ODP": "4","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -824,7 +824,7 @@ var pelepat = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Pelepat","ODP": "-","PDP": "-"},
+      "properties": {"Kecamatan":"Pelepat","ODP": "11","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -840,7 +840,7 @@ var jujuhanilir = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Jujuhan Ilir","ODP": "-","PDP": "-"},
+      "properties": {"Kecamatan":"Jujuhan Ilir","ODP": "12","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -856,7 +856,7 @@ var bathiniipelayang = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Bathin II Pelayang","ODP": "-","PDP": "-"},
+      "properties": {"Kecamatan":"Bathin II Pelayang","ODP": "11","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -872,7 +872,7 @@ var tanahsepenggallintas = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Tanah Sepenggal Lintas","ODP": "-","PDP": "-"},
+      "properties": {"Kecamatan":"Tanah Sepenggal Lintas","ODP": "7","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -888,7 +888,7 @@ var bathiniii = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Bathin III","ODP": "-","PDP": "-"},
+      "properties": {"Kecamatan":"Bathin III","ODP": "22","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -904,7 +904,7 @@ var bungodani = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Bungo Dani","ODP": "-","PDP": "-"},
+      "properties": {"Kecamatan":"Bungo Dani","ODP": "31","PDP": "1"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -920,7 +920,7 @@ var bathiniibabeko = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Bathin II Babeko","ODP": "-","PDP": "-"},
+      "properties": {"Kecamatan":"Bathin II Babeko","ODP": "3","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -936,7 +936,7 @@ var limburlubukmengkuang = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Limbur Lubuk Mengkuang","ODP": "-","PDP": "-"},
+      "properties": {"Kecamatan":"Limbur Lubuk Mengkuang","ODP": "4","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -952,23 +952,7 @@ var rimbotengah = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Rimbo Tengah","ODP": "-","PDP": "-"},
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          102.103145,
-          -1.509974
-        ]
-      }
-    }
-  ]
-};
-var rimbotengah = {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {"Kecamatan":"Rimbo Tengah","ODP": "-","PDP": "-"},
+      "properties": {"Kecamatan":"Rimbo Tengah","ODP": "35","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -984,7 +968,7 @@ var mukomukobatinvii = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Muko Muko Batin VII","ODP": "-","PDP": "-"},
+      "properties": {"Kecamatan":"Muko Muko Batin VII","ODP": "15","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -1000,7 +984,7 @@ var bathiniiiulu = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Bathin III Ulu","ODP": "-","PDP": "-"},
+      "properties": {"Kecamatan":"Bathin III Ulu","ODP": "3","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -1016,7 +1000,7 @@ var pelepatilir = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Pelepat Ilir","ODP": "-","PDP": "-"},
+      "properties": {"Kecamatan":"Pelepat Ilir","ODP": "8","PDP": "-"},
       "geometry": {
         "type": "Point",
         "coordinates": [
