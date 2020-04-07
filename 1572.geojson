@@ -5,8 +5,8 @@
       "type": "Feature",
       "properties": {
         "LOKASI": "KOTA SUNGAI PENUH",
-        "ODP": 6,
-        "PDP": 0
+        "ODP": 15,
+        "PDP": 1
       },
       "geometry": {
         "type": "Polygon",
