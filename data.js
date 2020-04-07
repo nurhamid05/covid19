@@ -181,7 +181,7 @@ var sekernan = {
   "features": [
     {
       "type": "Feature",
-      "properties": {"Kecamatan":"Sekernan","ODP": "7","PDP": "-"},
+      "properties": {"Kecamatan":"Sekernan","ODP": "7","PDP": "0"},
       "geometry": {
         "type": "Point",
         "coordinates": [
